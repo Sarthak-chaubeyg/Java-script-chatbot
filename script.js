@@ -76,6 +76,49 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 				case "how to be brahmachari":
                 return "Here are all the things you need to follow to be a brahmachari❤️️️<br><b>1. Save your vital energy.<br>2. No sexual thinking 😇<br>3. Don't watch romantic video🤮<br>4. No dirty conversation🤨<br>5. Don't abuse 🤬🤬<br>6. No fast food🍔🍔❌<br>7. Go outside in nature🌿🌿️🌱<br>8. Do meditation🧘, Exercise⛹️⛹️<br>9. Focus on goal 🔥🔥<br>10. Every girl just like sister👭</b>";
             case "Convert the file into mp3": case "convert the file into mp3": case "Download music for free": case "download music for free": case "Download video for free": case "download video for free": case "Download song for free": case "download song for free": case "Conert the file into mp4": case "convert the file into mp4": case "Covert into music": case "convert into music": case "Download video for free": case "download video for free": return 'Sure, here is the tool to convert any <b>youtube file into mo3 or mp4</b><br><br><iframe src="https://w16.mp3-juices.nu/" height="300px" width="350px"></iframe>';
+    case 'What is the capital of France?':
+        return 'Paris';
+    case 'Who wrote "To Kill a Mockingbird"?':
+        return 'Harper Lee';
+    case 'What is the boiling point of water?':
+        return '100°C (212°F)';
+    case 'What is the tallest mountain in the world?':
+        return 'Mount Everest';
+    case 'Who painted the Mona Lisa?':
+        return 'Leonardo da Vinci';
+    case 'What is the smallest planet in our solar system?':
+        return 'Mercury';
+    case 'Who developed the theory of relativity?':
+        return 'Albert Einstein';
+    case 'What is the capital of Japan?':
+        return 'Tokyo';
+    case 'What is the largest ocean on Earth?':
+        return 'Pacific Ocean';
+    case 'Who is the author of the Harry Potter series?':
+        return 'J.K. Rowling';
+    case 'What is the hardest natural substance on Earth?':
+        return 'Diamond';
+    case 'Who was the first man to walk on the moon?':
+        return 'Neil Armstrong';
+    case 'What is the most spoken language in the world?':
+        return 'Mandarin Chinese';
+    case 'Who is known as the Father of Computers?':
+        return 'Charles Babbage';
+    case 'What is the main ingredient in guacamole?':
+        return 'Avocado';
+    case 'What year did the Titanic sink?':
+        return '1912';
+    case 'What is the capital of Canada?':
+        return 'Ottawa';
+    case 'Who wrote "Pride and Prejudice"?':
+        return 'Jane Austen';
+    case 'What is the largest planet in our solar system?':
+        return 'Jupiter';
+    case 'Who discovered penicillin?':
+        return 'Alexander Fleming';
+    // ... Continue with more questions and answers
+	    
+			
 
             case "I want to search something":
             case "i want to search something":
