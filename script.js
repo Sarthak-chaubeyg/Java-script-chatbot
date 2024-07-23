@@ -98,6 +98,11 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 		case "Download this website":
 		case "download this website":
 			return 'Here is the download link for this website <a href="https://github.com/Sarthak-chaubeyg/Java-script-chatbot/archive/refs/heads/main.zip" style="color:rgba(22,127,77,0.5);">Download now</a>';
+	    case "Download new background images":
+		case "download new background images":
+		case "download background images":
+		case "Download background images":
+		return 'Here are the images you have asked for. These all images are created by imagination, the style is <b>GRAPHIC ART</b><br><a href="">DOWNLOAD NOW</a>'
 			//Music type cased
             case "rain ambient sound":
             case "play rain ambient sound":
