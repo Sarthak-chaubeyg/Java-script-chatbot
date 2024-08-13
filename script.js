@@ -118,6 +118,11 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 				case "Play tadow":
 				case "play tadow":
 					 return 'Here is the song. I hope it will be a relaxing mood song😌<br><audio controls src="tadow.mp3"></audio>';
+                case "Play Death to me song":
+				case "play death to me song":
+				case "Play Death to me":
+				case "play death to me":
+					 return 'Here is the song. I hope it will be motivational song for you<br><audio controls src="ai-res/death-to-me.mp3"></audio>';
 			   case "Play Shinunoga E-Wa song":
 				case "play Shinunoga E-Wa song":
 				case "play shinunoga e wa song":
