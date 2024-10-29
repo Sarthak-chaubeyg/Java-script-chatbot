@@ -149,7 +149,7 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 				case "play Sweater weather":
 				case "play sweater weather":
 				case "play sweater Weather":
-					 return 'Here is the song.<br><audio controls src="sweater-weather.mp3"></audio>';
+					 return 'Here is the song. I hope you are feeling really good😇<br><audio controls src="sweater-weather.mp3"></audio>';
 				case "Play Happy nation song":
 				case "play Happy nation song":
 				case "play happy nation song":
