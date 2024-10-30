@@ -107,7 +107,9 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 			case "hey There":
 			case "Hey!":
 			case "hey!":
-			case "Hey there": 
+			case "Hey there":
+		case "what's up?":
+		case "what's up":	
 				return 'Hey 😙 , How thanks for reaching me';
 			//Music type cased
             case "rain ambient sound":
@@ -162,6 +164,7 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 				case "play relaxing bg song":
 				case "Play relaxing bg":
 				case "play Relaxing bg":
+				case "play relaxing song":
 							 return 'Here is the song. It will uplift your mood😇<br><audio controls src="relaxingbg.mp3"></audio>';
 				case "Play Happy nation song":
 				case "play Happy nation song":
