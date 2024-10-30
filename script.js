@@ -110,7 +110,15 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 			case "Hey there":
 		case "what's up?":
 		case "what's up":	
-				return 'Hey 😙 , How thanks for reaching me';
+				return 'Hey 😙 , thanks for reaching me';
+		case "I am feeling bored":
+		case "i am feeling bored":
+		case "feeling bored":
+		case "bro i am feeling bored":
+		case "Bro i am feeling bored":
+		case "bro iam feeling bored":
+		case "Bro iam feeling bored":
+			return 'Are you feeling lonely? if yes, then you should play this game, <iframe src="https://noteplus.w3spaces.com/tic-tac-toe.html" height="280px" width="250px"></iframe>';
 			//Music type cased
             case "rain ambient sound":
             case "play rain ambient sound":
