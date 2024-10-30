@@ -93,6 +93,12 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
             case "Open google":
             case "open google":
                   return 'Let me open the sesrch panel for you<br><iframe src="https://ncert.nic.in/ncerts/l/iess201.pdf" height="350px" width="350px"></iframe>';
+			case "Hlo":
+			case "hlo":
+			case "Yo":
+			case "yo":
+			case "Hey there": 
+				return 'Hey 😙 , How thanks for reaching me';
 		case "Download this webpage":
 		case "download this webpage":
 		case "Download this website":
@@ -150,6 +156,13 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 				case "play sweater weather":
 				case "play sweater Weather":
 					 return 'Here is the song. I hope you are feeling really good😇<br><audio controls src="sweater-weather.mp3"></audio>';
+				 case "Play Doraemon relaxing song":
+				case "play doraemon relaxing  song":
+				case "Play Relaxing bg song":
+				case "play relaxing bg song":
+				case "Play relaxing bg":
+				case "play Relaxing bg":
+							 return 'Here is the song. It will uplift your mood😇<br><audio controls src="relaxingbg.mp3"></audio>';
 				case "Play Happy nation song":
 				case "play Happy nation song":
 				case "play happy nation song":
