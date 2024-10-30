@@ -109,6 +109,12 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 		case "download background images":
 		case "Download background images":
 		return 'Here are the images you have asked for. These all images are created by imagination, the style is <b>GRAPHIC ART</b><br><a href="https://www.mediafire.com/file/t6nf729q8chlubi/graphics.zip/file">DOWNLOAD NOW</a>'
+		case "Hlo":
+			case "hlo":
+			case "Yo":
+			case "yo":
+			case "Hey there": 
+				return 'Hey 😙 , How thanks for reaching me';
 			//Music type cased
             case "rain ambient sound":
             case "play rain ambient sound":
