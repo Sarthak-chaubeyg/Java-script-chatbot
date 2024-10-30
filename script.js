@@ -93,12 +93,6 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
             case "Open google":
             case "open google":
                   return 'Let me open the sesrch panel for you<br><iframe src="https://ncert.nic.in/ncerts/l/iess201.pdf" height="350px" width="350px"></iframe>';
-			case "Hlo":
-			case "hlo":
-			case "Yo":
-			case "yo":
-			case "Hey there": 
-				return 'Hey 😙 , How thanks for reaching me';
 		case "Download this webpage":
 		case "download this webpage":
 		case "Download this website":
