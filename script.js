@@ -125,7 +125,7 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
             case "rain background sound":
             case "Play rain background sound":
             case "play rain Background sound":
-                return 'Here is the relaxing rain ambient sound. I hope you will find useful.😌<br><audio controls src="ai-res/test.mp3"></audio>';
+                return 'Here is the relaxing rain ambient sound. I hope you will find useful.😌<br><audio controls src="test.mp3"></audio>';
             case "play suzume song":
             case "play suzume":
                 return 'Here is the song you asked for. Probably you are an anime lover or watch anime or its edits😙<br><audio controls src="ai-res/suzume.mp3"></audio>';
