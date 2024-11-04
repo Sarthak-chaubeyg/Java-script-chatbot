@@ -129,6 +129,14 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
             case "play suzume song":
             case "play suzume":
                 return 'Here is the song you asked for. Probably you are an anime lover or watch anime or its edits😙<br><audio controls src="ai-res/suzume.mp3"></audio>';
+	    case "Play Relaxing song":
+           case "play relaxing song":
+	    case "play Relaxing sound":
+	    case "Play Doraemon background sound":
+           case "Play doraemon background song":
+           case "play Doraemon background sound":
+	    case "play Doraemon bg sound":
+					 return 'Here is the song. I hope it will be a relaxing mood song😌<br><audio controls src="ai-res/relaxingbg.mp3"></audio>';
 				case "Play tadow song":
 				case "play tadow song":
 				case "Play tadow":
