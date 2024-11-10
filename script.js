@@ -67,7 +67,7 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
             case "who made you?":
 		case "Who made you":
 		case "who made you":
-                return 'I was developed by <b>Sarthak Chaubey</b>. co-engineered with ChatGPT';
+                return 'I was developed by <b>Sarthak Chaubey</b>. co-engineered with ChatGPT <i class="ri-openai-fill"></i>';
             case "what's your name?":
                 return "My name is SarAi!";
             // Add more cases as needed
