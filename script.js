@@ -67,9 +67,18 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
             case "who made you?":
 		case "Who made you":
 		case "who made you":
-                return 'I was developed by <b>Sarthak Chaubey</b>. co-engineered with ChatGPT <i class="ri-openai-fill"></i>';
+                return 'I was developed by <b>Sarthak Chaubey</b>. co-engineered with ChatGPT <i class="ri-openai-fill"></i> and edited by him';
             case "what's your name?":
-                return "My name is SarAi!";
+                case "what's your name?":
+		case "What's your name?":
+                case "What's your name?":
+			case "What's your name":
+                case "what's your name":
+			case "What is your name?":
+                case "what is your name?":
+		case "What is your name":
+                case "what is your name":
+                return "My name is SarAi!, a <b>java-script based Chatbot</b> ";
             // Add more cases as needed
             case "parevartan school logo":
                 return '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjXb9Q5EuPnS17cdxXZOVoen2xaAeWRvf5gqzwhD6PtCeiUebxJHNz46P&s=10" height="350px" width="400px">';
@@ -149,7 +158,7 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 				case "play hotline song":
 				case "Play Hotline":
 				case "play hotline":
-					 return 'Here is the song. I hope it will be a relaxing mood song😌 and will uplift your mood. You should watch a rainy weather to enhance this song betas and vibe😌<br><audio controls src="hotline.mp3"></audio>';
+					 return 'Here is the song. I hope it will be a relaxing mood song😌 and will uplift your mood. You should watch a rainy weather <i class="ri-rainy-fill"></i> to enhance this song betas and vibe😌<br><audio controls src="hotline.mp3"></audio>';
                 case "Play Death to me song":
 				case "play death to me song":
 				case "Play Death to me":
