@@ -64,8 +64,10 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
             case "how are you?":
                 return "I'm just a computer program, but I'm functioning properly!";
             case "who made you?":
-            case "who made you":
-                return 'I was made by <b>Sarthak Chaubey</b>.';
+            case "who made you?":
+		case "Who made you":
+		case "who made you":
+                return 'I was developed by <b>Sarthak Chaubey</b>. co-engineered with ChatGPT';
             case "what's your name?":
                 return "My name is SarAi!";
             // Add more cases as needed
@@ -119,6 +121,7 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 		case "bro iam feeling bored":
 		case "Bro iam feeling bored":
 			return 'Are you feeling lonely? if yes, then you should play this game, <iframe src="tic-tac-toe.html" height="300px" width="300px"></iframe>';
+		
 			//Music type cased
             case "rain ambient sound":
             case "play rain ambient sound":
