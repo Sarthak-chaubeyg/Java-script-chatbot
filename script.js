@@ -87,6 +87,8 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 		case "Your name":
 		case "your name":
                 return "My name is SarAi, a <b>java-script based Chatbot</b> & yeah thanks for asking. 😀 ";
+		case "":
+			return "Please type something you need =/";
             // Add more cases as needed
             case "parevartan school logo":
                 return '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjXb9Q5EuPnS17cdxXZOVoen2xaAeWRvf5gqzwhD6PtCeiUebxJHNz46P&s=10" height="350px" width="400px">';
