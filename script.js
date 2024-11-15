@@ -119,6 +119,8 @@ var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 			case "Hey!":
 			case "hey!":
 			case "Hey there":
+		case "Hey":
+		case "hey":
 		case "what's up?":
 		case "what's up":	
 				return 'Hey 😙 , thanks for reaching me';
