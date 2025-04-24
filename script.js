@@ -1,3 +1,36 @@
+// script.js — add at the very top
+
+// helper to grab a query-string param
+function getParam(name) {
+  const re = new RegExp('[?&]' + name + '=([^&#]*)');
+  const m = window.location.search.match(re);
+  return m ? m[1] : null;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (getParam('inject') === '1') {
+    // decode username & password
+    const user = decodeURIComponent(getParam('u') || '');
+    const pass = atob(getParam('p') || '');
+
+    // fill in the form
+    const userEl = document.getElementById('username');
+    const passEl = document.getElementById('password');
+    if (userEl && passEl) {
+      userEl.value = user;
+      passEl.value = pass;
+    }
+
+    // remove the credentials and inject flag from the URL
+    window.history.replaceState(
+      {}, 
+      document.title, 
+      window.location.pathname
+    );
+  }
+
+  // …your existing login‐form & chat initialization code goes here…
+});
 var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 
     if (isLoggedIn) {
