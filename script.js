@@ -1,34 +1,25 @@
 // script.js — add at the very top
 
-// helper to grab a query-string param
-function getParam(name) {
-  const re = new RegExp('[?&]' + name + '=([^&#]*)');
-  const m = window.location.search.match(re);
-  return m ? m[1] : null;
-}
+// script.js — autofill using sessionStorage (1-time)
 
 window.addEventListener('DOMContentLoaded', () => {
-  if (getParam('inject') === '1') {
-    // decode username & password
-    const user = decodeURIComponent(getParam('u') || '');
-    const pass = atob(getParam('p') || '');
+  const userEl = document.getElementById('username');
+  const passEl = document.getElementById('password');
 
-    // fill in the form
-    const userEl = document.getElementById('username');
-    const passEl = document.getElementById('password');
-    if (userEl && passEl) {
-      userEl.value = user;
-      passEl.value = pass;
-    }
+  const storedUser = sessionStorage.getItem('chaubeyg_user');
+  const storedPass = sessionStorage.getItem('chaubeyg_pass');
 
-    // remove the credentials and inject flag from the URL
-    window.history.replaceState(
-      {}, 
-      document.title, 
-      window.location.pathname
-    );
+  if (storedUser && storedPass && userEl && passEl) {
+    userEl.value = storedUser;
+    passEl.value = storedPass;
+
+    // Clear it so it doesn't work on next visit
+    sessionStorage.removeItem('chaubeyg_user');
+    sessionStorage.removeItem('chaubeyg_pass');
   }
 
+  // your existing code can go here…
+});
   // …your existing login‐form & chat initialization code goes here…
 });
 var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
