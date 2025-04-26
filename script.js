@@ -1,27 +1,32 @@
-// script.js — add at the very top
+ // 1️⃣ Tell the opener you’re ready to receive
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.opener && window.opener.postMessage) {
+      window.opener.postMessage({ type: 'ready' }, 'https://injector.netlify.app');
+    }
+  });
 
-// script.js — autofill using sessionStorage (1-time)
+  // 2️⃣ Listen for the credentials
+  window.addEventListener('message', (event) => {
+    if (event.origin !== 'https://injector.netlify.app') return;
+    const data = event.data;
+    if (data && data.type === 'creds') {
+      const { user, pass } = data;
+      // Store in sessionStorage for one‐time fill
+      sessionStorage.setItem('chaubeyg_user', user);
+      sessionStorage.setItem('chaubeyg_pass', pass);
 
-window.addEventListener('DOMContentLoaded', () => {
-  const userEl = document.getElementById('username');
-  const passEl = document.getElementById('password');
+      // Auto-fill and then clear so reload won’t re-fill
+      const uIn = document.getElementById('username');
+      const pIn = document.getElementById('password');
+      if (uIn && pIn) {
+        uIn.value = user;
+        pIn.value = pass;
+        sessionStorage.removeItem('chaubeyg_user');
+        sessionStorage.removeItem('chaubeyg_pass');
+      }
+    }
+  });
 
-  const storedUser = sessionStorage.getItem('chaubeyg_user');
-  const storedPass = sessionStorage.getItem('chaubeyg_pass');
-
-  if (storedUser && storedPass && userEl && passEl) {
-    userEl.value = storedUser;
-    passEl.value = storedPass;
-
-    // Clear it so it doesn't work on next visit
-    sessionStorage.removeItem('chaubeyg_user');
-    sessionStorage.removeItem('chaubeyg_pass');
-  }
-
-  // your existing code can go here…
-});
-  // …your existing login‐form & chat initialization code goes here…
-});
 var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 
     if (isLoggedIn) {
