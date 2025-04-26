@@ -100,6 +100,25 @@
 />
 </head>
 <body>
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // one-time pull
+    const user = localStorage.getItem('chaubeyg_user');
+    const pass = localStorage.getItem('chaubeyg_pass');
+    if (user && pass) {
+      // fill into your inputs
+      const uIn = document.getElementById('username');
+      const pIn = document.getElementById('password');
+      if (uIn && pIn) {
+        uIn.value = user;
+        pIn.value = pass;
+      }
+      // clear so on reload it's gone
+      localStorage.removeItem('chaubeyg_user');
+      localStorage.removeItem('chaubeyg_pass');
+    }
+  });
+</script>
 <div class="container" id="loginContainer">
     <h2>Login</h2>
     <form id="loginForm">
