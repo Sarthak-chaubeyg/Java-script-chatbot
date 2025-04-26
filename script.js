@@ -1,32 +1,3 @@
- // 1️⃣ Tell the opener you’re ready to receive
-  window.addEventListener('DOMContentLoaded', () => {
-    if (window.opener && window.opener.postMessage) {
-      window.opener.postMessage({ type: 'ready' }, 'https://injector.netlify.app');
-    }
-  });
-
-  // 2️⃣ Listen for the credentials
-  window.addEventListener('message', (event) => {
-    if (event.origin !== 'https://injector.netlify.app') return;
-    const data = event.data;
-    if (data && data.type === 'creds') {
-      const { user, pass } = data;
-      // Store in sessionStorage for one‐time fill
-      sessionStorage.setItem('chaubeyg_user', user);
-      sessionStorage.setItem('chaubeyg_pass', pass);
-
-      // Auto-fill and then clear so reload won’t re-fill
-      const uIn = document.getElementById('username');
-      const pIn = document.getElementById('password');
-      if (uIn && pIn) {
-        uIn.value = user;
-        pIn.value = pass;
-        sessionStorage.removeItem('chaubeyg_user');
-        sessionStorage.removeItem('chaubeyg_pass');
-      }
-    }
-  });
-
 var isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 
     if (isLoggedIn) {
